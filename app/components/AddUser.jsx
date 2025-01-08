@@ -38,7 +38,7 @@ const AddUser = () => {
     
   return (
     <>
-      <div className="w-full text-black h-screen absolute flex items-center justify-center top-0 right-0 bg-[#4c4c4c6e] backdrop-blur-sm">
+      <div className="w-full text-black h-screen absolute flex items-center justify-center top-0 right-0 bg-[#4c4c4c6e] backdrop-blur-sm md:p-0 p-2">
         <Toaster />
         <form
           onSubmit={handleSubmit}

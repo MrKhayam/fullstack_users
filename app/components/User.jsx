@@ -35,11 +35,11 @@ const User = ({user}) => {
     
   return (
     <>
-      <div className="md:w-[60%] w-full md:flex-row flex-col text-black flex justify-between p-3 items-center md:h-12 bg-white rounded">
+      <div className="md:w-[60%] w-full md:flex-row flex-col text-black flex md:justify-between p-3 md:items-center md:h-12 bg-white rounded">
         <Toaster />
-        <h1>{user?.name}</h1>
-        <p>{user?.email}</p>
-        <div className="flex gap-2">
+        <h1 className='md:text-lg md:font-semibold text-2xl font-bold'>{user?.name}</h1>
+        <p className='md:text-[16px] text-sm md:text-black text-[#5f5f5f]'>{user?.email}</p>
+        <div className="flex gap-2 md:mt-0 mt-5 md:justify-normal justify-end">
           <button onClick={() => handleEdit(user)} className="bg-black px-6 py-2 rounded text-white">
             Edit
           </button>
